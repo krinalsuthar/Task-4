@@ -1,0 +1,87 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-color: black;
+  --light-color: white;
+}
+.main {
+  display: flex;
+  background-color: var(--dark-color);
+  background-attachment: fixed;
+}
+.sidebar {
+  width: 120px;
+  background-color: var(--dark-color);
+  position: fixed;
+}
+.body {
+  width: 100vw;
+  background-image: url("./assests/season4.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  flex: 1;
+  margin-left: 120px;
+  background-color: var(--dark-color);
+}
+.menu i {
+  margin: 30px auto;
+  color: var(--light-color);
+  cursor: pointer;
+}
+.menu {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu :hover + .text {
+  display: block;
+  color: var(--light-color);
+}
+.text {
+  display: none;
+  color: var(--light-color);
+  position: fixed;
+  margin-left: 80px;
+  font-size: 20px;
+  background-color: var(--dark-color);
+}
+.color {
+  position: absolute;
+  color: var(--light-color);
+  bottom: 0px;
+  margin-bottom: 150px;
+  margin-left: 20px;
+}
+.cardMain {
+  background-color: var(--dark-color);
+}
+.card1 img {
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid lightblue;
+  width: 16rem;
+  height: 300px;
+}
+.card1 img:hover {
+  transform: scale(1.1);
+}
+.carousel-item img {
+  border-radius: 20px;
+  width: 10px;
+  height: 90px;
+  margin: 0px 10px;
+}
+.carousel-item {
+  width: 350px !important;
+}
+.card-img-top {
+  margin-bottom: 20px;
+}
+.footer {
+  color: var(--light-color);
+}
